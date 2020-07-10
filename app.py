@@ -32,8 +32,8 @@ def auth():
     return render_template('authorize.html')
 
 
-@app.route('/authorize/<provider>')
-def oauth_authorize(provider):
+@app.route('/authorize')
+def oauth_authorize():
     if 'access_token' in session:
         return redirect(url_for("index"))
     oauth = VkSignIn()
