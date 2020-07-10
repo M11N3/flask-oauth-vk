@@ -8,7 +8,7 @@ from models import VkSignIn
 
 app = Flask(__name__)
 sess = Session()
-app.config['SECRET_KEY'] = os.urandom(20)
+app.config['SECRET_KEY'] = '4373c071c96a4ed653bbe6f0e40727691415354b'
 
 
 @app.route('/')
